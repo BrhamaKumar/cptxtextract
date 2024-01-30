@@ -128,7 +128,6 @@ async def account_login(bot: Client, m: Message):
         
         )
         creds = reply.text
-    print(f"Received credentials: {creds}")  # Add this line for debugging
     session = requests.Session()
     session.headers.update(headers)
 
